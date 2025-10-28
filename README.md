@@ -31,7 +31,7 @@ I enjoy building interactive applications, exploring 3D modeling, and creating i
 - Implemented **autonomous targeting logic** to compete against multiple AI players.
 - Applied **object-oriented programming** concepts including classes, inheritance, and method overriding.
 
-### Hangman Game – Java
+### [Hangman Game – Java](https://github.com/Alluri4510/Hangman)
 - Individual project to recreate the classic Hangman game in Java.
 - Developed the full game logic, including word selection, user input handling, and win/loss conditions.
 - Implemented **text-based interface** and **input validation** to enhance user experience.
