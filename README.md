@@ -43,7 +43,7 @@ I enjoy building interactive applications, exploring 3D modeling, and creating i
 - Contributed to **voice generation simulations** and **data collection**.  
 - Conducted statistical analysis in **R** and visualized findings.  
 
-## 🌱 Learning & Interests
+## Learning & Interests
 - **Machine Learning projects**  
 - **VR projects with Architecture**  
 - Exploring **interactive web applications** and **mobile development**  
