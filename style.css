@@ -172,12 +172,20 @@ section {
 .glass-effect {
     background: rgba(22, 27, 34, 0.6);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
     border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
     padding: var(--spacing-md);
     transition: var(--transition-normal);
     opacity: 0;
     transform: translateY(30px);
+}
+
+/* Fallback for browsers that don't support backdrop-filter */
+@supports not (backdrop-filter: blur(10px)) {
+    .glass-effect {
+        background: rgba(22, 27, 34, 0.95);
+    }
 }
 
 .glass-effect.animate-in {
@@ -203,8 +211,16 @@ section {
     z-index: 1000;
     background: rgba(13, 17, 23, 0.8);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
     border-bottom: 1px solid transparent;
     transition: var(--transition-normal);
+}
+
+/* Fallback for browsers that don't support backdrop-filter */
+@supports not (backdrop-filter: blur(10px)) {
+    .navbar {
+        background: rgba(13, 17, 23, 0.98);
+    }
 }
 
 .navbar.scrolled {
@@ -904,9 +920,8 @@ section {
     *,
     *::before,
     *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
+        animation: none !important;
+        transition: none !important;
     }
 }
 
