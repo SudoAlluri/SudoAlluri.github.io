@@ -7,35 +7,81 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="hero">
-        <h1>Hi there, I'm Anuja Alluri</h1>
-        <div class="typing-text" id="typingText"></div>
-        <p>xxxxxxxxxxxxxxxxxxx Student at <strong>Wright State University</strong></p>
-        <p>Passionate about Machine Learning, VR, and Web/Software Development</p>
-        <div class="scroll-indicator floating">
-            <span></span>
+    <nav class="navbar">
+        <div class="nav-brand">Anuja Alluri</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#research">Research</a>
         </div>
-    </div>
+    </nav>
 
-    <div class="container">
-        <div class="content">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Programming Languages</h3>
-                    <p>Python • Java • Assembly • HTML • R</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Frameworks & Libraries</h3>
-                    <p>TensorFlow • OpenCV • Character Creator 4 • Flutter • Unity • Wireshark</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Tools & Platforms</h3>
-                    <p>macOS • Windows • VS Code • Android Studio • Google Colab • AWS</p>
+    <section class="hero-section" id="about">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Anuja Alluri</h1>
+                <div class="typing-text" id="typingText"></div>
+                <p class="hero-description">Undergraduate Student at Wright State University passionate about Machine Learning, VR, and Web/Software Development</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">6+</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Languages</div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <h2>Team Projects</h2>
+    <div class="main-content">
+        <section id="skills" class="section">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <div class="category-header">Programming Languages</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Assembly</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">R</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">Frameworks & Libraries</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">Character Creator 4</span>
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">Unity</span>
+                        <span class="skill-tag">Wireshark</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">Tools & Platforms</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">macOS</span>
+                        <span class="skill-tag">Windows</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Android Studio</span>
+                        <span class="skill-tag">Google Colab</span>
+                        <span class="skill-tag">AWS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <span class="project-type">TEAM</span>
@@ -65,7 +111,6 @@
                 </div>
             </div>
 
-            <h2>Individual Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <span class="project-type">SOLO</span>
@@ -85,34 +130,42 @@
                     <a href="https://github.com/Alluri4510/Hangman" target="_blank">View on GitHub →</a>
                 </div>
             </div>
+        </section>
 
-            <h2>Research Experience</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
+        <section id="research" class="section">
+            <h2 class="section-title">Research & Interests</h2>
+            <div class="research-grid">
+                <div class="research-card">
                     <h3>3D Character Modeling</h3>
                     <p>Unity & Character Creator 4 optimization</p>
                 </div>
-                <div class="skill-card">
+                <div class="research-card">
                     <h3>Voice Generation</h3>
                     <p>Simulations & data collection</p>
                 </div>
-                <div class="skill-card">
+                <div class="research-card">
                     <h3>Statistical Analysis</h3>
                     <p>R programming & data visualization</p>
                 </div>
-            </div>
-
-            <h2>Learning & Interests</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <p>Machine Learning Projects</p>
-                    <p>VR Projects with Architecture</p>
-                    <p>Interactive Web Applications</p>
-                    <p>Mobile Development</p>
+                <div class="research-card">
+                    <h3>Machine Learning</h3>
+                    <p>Exploring ML applications</p>
+                </div>
+                <div class="research-card">
+                    <h3>VR Architecture</h3>
+                    <p>Virtual reality design projects</p>
+                </div>
+                <div class="research-card">
+                    <h3>Mobile Development</h3>
+                    <p>Cross-platform applications</p>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
+
+    <footer class="footer">
+        <p>© 2025 Anuja Alluri. Building innovative solutions with code.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
