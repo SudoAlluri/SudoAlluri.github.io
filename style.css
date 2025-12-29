@@ -400,12 +400,17 @@ body {
 
 /* Projects Section */
 .project-category-title {
-    color: #8b5cf6;
+    color: #a78bfa;
     font-size: 1.8em;
     font-weight: 600;
     margin: 40px 0 25px;
     padding-left: 20px;
-    border-left: 4px solid #8b5cf6;
+    border-left: 4px solid #a78bfa;
+}
+
+.light-theme .project-category-title {
+    color: #7c3aed;
+    border-left-color: #7c3aed;
 }
 
 .projects-grid {
@@ -536,10 +541,16 @@ body {
     gap: 25px;
 }
 .contact-section {
-    background: rgba(30, 41, 59, 0.3);
-    border-radius: 20px;
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: 30px;
     margin: 50px;
     padding: 80px 50px !important;
+}
+
+.light-theme .contact-section {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(139, 92, 246, 0.3);
 }
 
 .contact-content {
