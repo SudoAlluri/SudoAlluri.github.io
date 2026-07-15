@@ -386,7 +386,7 @@ body {
     line-height: 1.6;
     margin: 30px 0;
     /* text-indent was intended previously; ensure proper syntax */
-    text-indent: 70px;
+    padding-left: 40px;
 }
 
 /* Stat area */
@@ -432,6 +432,10 @@ body {
     font-weight: 700;
     padding-bottom: 15px;
     border-bottom: 2px solid #333;
+}
+
+.section h2{
+    margin-bottom: 35px
 }
 
 /* Skills Section */
