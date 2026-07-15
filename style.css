@@ -11,6 +11,13 @@ body {
     overflow-x: hidden;
 }
 
+/* Utility container to keep consistent left/right padding across sections. Add the class `container` to HTML wrappers if needed. */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
 /* Light Theme (Default) */
 .light-theme {
     background: #ffffff;
@@ -352,6 +359,10 @@ body {
 
 .hero-content {
     max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    /* keep same horizontal padding as other sections so content aligns */
+    padding: 0 40px;
 }
 
 .hero-text h1 {
@@ -374,9 +385,11 @@ body {
     color: #666;
     line-height: 1.6;
     margin: 30px 0;
-    text-indent: 70px
+    /* text-indent was intended previously; ensure proper syntax */
+    text-indent: 70px;
 }
 
+/* Stat area */
 .hero-stats {
     display: flex;
     gap: 50px;
@@ -475,7 +488,8 @@ body {
     color: #333;
     font-size: 1.4em;
     font-weight: 600;
-    margin: 40px 0 40px;
+    /* reduce bottom margin so there's consistent spacing to the projects grid */
+    margin: 40px 0 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid #e5e5e5;
 }
@@ -484,7 +498,8 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     gap: 20px;
-    margin-bottom: 40px;
+    /* add extra space after projects */
+    margin-bottom: 60px;
 }
 
 .project-card {
@@ -521,19 +536,16 @@ body {
     flex-grow: 1;
 }
 
-.project-card a {
-    display: inline-block;
-    margin-top: 12px;
-    color: #0066cc;
+/* Ensure project links/descriptions never show an underline */
+.project-card a,
+.project-card p a {
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s;
-    font-size: 0.95em;
 }
 
-.project-card a:hover {
-    color: #0052a3;
-    text-decoration: underline;
+.project-card a:hover,
+.project-card p a:hover {
+    text-decoration: none;
+    color: #0052a3; /* keep the color change on hover but no underline */
 }
 
 /* Research Section */
@@ -576,6 +588,8 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+    /* add breathing room between sections */
+    margin-top: 30px;
 }
 
 .contact-link {
@@ -590,6 +604,7 @@ body {
     transition: all 0.2s;
     position: relative;
     overflow: hidden;
+    margin-bottom: 12px;
 }
 
 .contact-link:hover {
@@ -660,6 +675,10 @@ html {
     
     .hero-section {
         padding: 80px 20px 50px;
+    }
+    
+    .hero-content {
+        padding: 0 20px;
     }
     
     .hero-text h1 {
