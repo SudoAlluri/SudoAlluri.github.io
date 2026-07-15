@@ -490,6 +490,7 @@ body {
     font-weight: 600;
     /* reduce bottom margin so there's consistent spacing to the projects grid */
     margin: 40px 0 20px;
+    margin-bottom:36px
     padding-bottom: 10px;
     border-bottom: 1px solid #e5e5e5;
 }
