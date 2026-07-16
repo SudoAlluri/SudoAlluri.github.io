@@ -1,193 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anuja Alluri - Portfolio</title>
-    <!--
-      style.css: Main stylesheet for the site.
-      If you want to change colors, spacing, or layout, edit style.css.
-      See the top of style.css for global/theme settings.
-    -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="light-theme">
-    <!-- NAVBAR: Change site name, links, or add/remove buttons here -->
-    <nav class="navbar">
-        <div class="nav-brand">Anuja Alluri</div> <!-- Edit this to change the displayed name -->
-        <div class="nav-links">
-            <!-- Update anchors to match section IDs or external pages -->
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <!-- Theme toggle button: JS (script.js) controls behavior. If you remove or rename the ID,
-                 update script.js to reference the new ID. -->
-            <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
-                <!-- Icons shown/hidden via theme classes in CSS. To change icons, replace the SVGs. -->
-                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="5"></circle>
-                    <line x1="12" y1="1" x2="12" y2="3"></line>
-                    <line x1="12" y1="21" x2="12" y2="23"></line>
-                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                    <line x1="1" y1="12" x2="3" y2="12"></line>
-                    <line x1="21" y1="12" x2="23" y2="12"></line>
-                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                </svg>
-                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                </svg>
-            </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anuja Alluri | Portfolio</title>
+    <meta
+      name="description"
+      content="A clean and simple portfolio website for sharing your work."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <p class="eyebrow">Portfolio</p>
+        <h1>Hi, I’m Anuja Alluri.</h1>
+        <p class="intro">
+          I build thoughtful digital work with a simple approach and a strong focus on clarity.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#projects">View projects</a>
+          <a class="btn btn-secondary" href="mailto:alluri.17@wright.edu">Email me</a>
         </div>
-    </nav>
+      </div>
+    </header>
 
-    <!-- CONTAINER: Main page contents. Add, remove or reorder sections here. -->
-    <div class="container">
-        <!-- ABOUT / HEADER: Change the heading, description, or typing text (controlled by script.js) -->
-        <section class="header-section" id="about">
-            <div class="header-content">
-                <h1>Anuja Alluri</h1> <!-- Change displayed name here -->
-                <div class="typing-text" id="typingText"></div> <!-- script.js injects rotating text here -->
-                <p class="header-description">Graduate Student in Data Science passionate about Machine Learning, VR, Data analysis, and Web/Software Development</p>
-            </div>
-        </section>
+    <main>
+      <section class="section" id="about">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            I’m interested in building useful things, solving problems, and creating clean experiences that feel calm and clear.
+          </p>
+        </div>
+      </section>
 
-        <!-- SKILLS: Edit skill tags or add new categories/cards. HTML structure: section -> div.card -> h3 + .skill-tags 
-        <section id="skills" class="section">
-            <h2>Skills & Technologies</h2>
-            
-            <div class="card">
-                <h3>Programming Languages</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Java</span>
-                    <span class="skill-tag">Assembly</span>
-                    <span class="skill-tag">HTML</span>
-                    <span class="skill-tag">R</span>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>Frameworks & Libraries</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">TensorFlow</span>
-                    <span class="skill-tag">OpenCV</span>
-                    <span class="skill-tag">Character Creator 4</span>
-                    <span class="skill-tag">Flutter</span>
-                    <span class="skill-tag">Unity</span>
-                    <span class="skill-tag">Wireshark</span>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>Tools & Platformsss</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">macOS</span>
-                    <span class="skill-tag">Windows</span>
-                    <span class="skill-tag">VS Code</span>
-                    <span class="skill-tag">Android Studio</span>
-                    <span class="skill-tag">Google Colab</span>
-                    <span class="skill-tag">AWS</span>
-                </div>
-            </div>
-        </section>
-    -->
-
-        <!-- PROJECTS: Update project titles, descriptions, and links here. -->
-        <section id="projects" class="section">
-            <h2>Featured Projects</h2>
-            
-            <a href="https://github.com/TheCodeMaster210/Team11" target="_blank" class="project-card-link">
-                <div class="card project-card">
-                    <h3>Secure Image Transmission with Li-Fi</h3>
-                    <p>ML-based image identification system (10/100 images) • AWS-hosted webpage deployment • Flutter mobile app with authentication & real-time display</p>
-                </div>
+      <section class="section" id="projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="project-grid">
+            <a
+              class="project-card"
+              href="https://github.com/SudoAlluri/Mental_Health_Analysis"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3>Mental Health Risk Prediction</h3>
+              <p>Analyzed dataset of personal, lifestyle, and mental health metrics, produced correlation visualizations in Tableau, and developed predictive models</p>
+              <span>View project →</span>
             </a>
 
-            <a href="https://github.com/22lavonne/CEG4110-Grumpy-Chef-App" target="_blank" class="project-card-link">
-                <div class="card project-card">
-                    <h3>Grumpy Chef – Recipe & Inventory App</h3>
-                    <p>Cross-platform recipe management system • Firebase authentication & real-time database • Smart pantry validation & quantity scaling</p>
-                </div>
+            <a
+              class="project-card"
+              href="https://github.com/22lavonne/CEG4110-Grumpy-Chef-App"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3>Grumpy Chef – Recipe & Inventory App</h3>
+              <p>Cross-platform recipe management system • Firebase authentication & real-time database • Smart pantry validation & quantity scaling</p>
+              <span>View project →</span>
             </a>
 
-            <a href="https://github.com/SudoAlluri/ComputerGraphics/tree/main/project1" target="_blank" class="project-card-link">
-                <div class="card project-card">
-                    <h3>Color Catching Game</h3>
-                    <p>Interactive web-based color-matching game • Dynamic difficulty levels • Real-time scoring system</p>
-                </div>
+            <a
+              class="project-card"
+              href="https://github.com/SudoAlluri/ComputerGraphics/tree/main/project1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3>Color Catching Game</h3>
+              <p>Interactive web-based color-matching game • Dynamic difficulty levels • Real-time scoring system</p>
+              <span>View project →</span>
             </a>
 
-            <a href="https://github.com/SudoAlluri/ComputerGraphics/tree/main/project2" target="_blank" class="project-card-link">
-                <div class="card project-card">
-                    <h3>3D Dining Room Scene</h3>
-                    <p>Interactive 3D dining room scene rendered using WebGL • Multiple polyhedron types & procedural textures • Phong lighting with two light sources & camera controls</p>
-                </div>
+            <a
+              class="project-card"
+              href="https://github.com/SudoAlluri/ComputerGraphics/tree/main/project2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3>3D Dining Room Scene</h3>
+              <p>Interactive 3D dining room scene rendered using WebGL • Multiple polyhedron types & procedural textures • Phong lighting with two light sources & camera controls</p>
+              <span>View project →</span>
             </a>
 
-            <a href="https://github.com/subixsh04/Data-Detectives" target="_blank" class="project-card-link">
-                <div class="card project-card">
-                    <h3>Data Detectives</h3>
-                    <p>Machine Learning project using linear regression and neural networks to analyze historical crime data and predict future crime spots in Cincinnati</p>
-                </div>
+            <a
+              class="project-card"
+              href="https://github.com/subixsh04/Data-Detectives"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3>Data Detectives</h3>
+              <p>Machine Learning project using linear regression and neural networks to analyze historical crime data and predict future crime spots in Cincinnati</p>
+              <span>View project →</span>
             </a>
 
-            <a href="https://github.com/SudoAlluri/Mental_Health_Analysis" target="_blank" class="project-card-link">
-                <div class="card project-card">
-                    <h3>Mental Health Analysis & Prediction</h3>
-                    <p>Analyzed dataset of personal, lifestyle, and mental health metrics, produced correlation visualizations in Tableau, and developed predictive models</p>
-                </div>
+            <a
+              class="project-card"
+              href="https://github.com/TheCodeMaster210/Team11"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3>Secure Image Transmission with Li-Fi</h3>
+              <p>ML-based image identification system (10/100 images) • AWS-hosted webpage deployment • Flutter mobile app with authentication & real-time display</p>              
+              <span>View project →</span>
             </a>
 
-            <a href="https://github.com/sp22-cs1160/project-04-Anujaalluri" target="_blank" class="project-card-link">
-                <div class="card project-card">
-                    <h3>Battleship Game – Python</h3>
-                    <p>Autonomous AI player with targeting logic • Grid & Player class implementation • Object-oriented design patterns</p>
-                </div>
+            <a
+              class="project-card"
+              href="https://github.com/sp22-cs1160/project-04-Anujaalluri"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3>Battleship Game – Python</h3>
+              <p>Autonomous AI player with targeting logic • Grid & Player class implementation • Object-oriented design patterns</p>
+              <span>View project →</span>
             </a>
 
-            <a href="https://github.com/Alluri4510/Hangman" target="_blank" class="project-card-link">
-                <div class="card project-card">
-                    <h3>Hangman Game – Java</h3>
-                    <p>Classic Hangman with full game logic • Input validation & error handling • Encapsulation and OOP principles</p>
-                </div>
+            <a
+              class="project-card"
+              href="https://github.com/Alluri4510/Hangman"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3>Hangman Game – Java</h3>
+              <p>Classic Hangman with full game logic • Input validation & error handling • Encapsulation and OOP principles</p>              
+              <span>View project →</span>
             </a>
-        </section>
 
-        <!-- CONTACT: Update contact methods or add social links here. -->
-        <section id="contact" class="section">
-            <h2>Connect</h2>
-            
-            <div class="card contact-card">
-                <div class="contact-flex">
-                    <div>
-                        <h3>Email</h3>
-                        <!--<p>alluri.17@wright.edu</p>  Change the email here if desired -->
-                    </div>
-                    <a href="mailto:alluri.17@wright.edu" class="contact-button">alluri.17@wright.edu</a>
-                </div>
-            </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="card contact-card">
-                <div class="contact-flex">
-                    <div>
-                        <h3>LinkedIn</h3>
-                        <p>Connect with me on LinkedIn</p>
-                    </div>
-                    <a href="https://www.linkedin.com/in/anuja-alluri-a004b72b7" target="_blank" class="contact-button">Visit Profile</a>
-                </div>
-            </div>
-        </section>
-    </div>
+      <section class="section contact-section" id="contact">
+        <div class="container">
+          <h2>Connect</h2>
+          <p>If you’d like to talk, collaborate, or just say hello, I’d be happy to connect.</p>
+          <div class="contact-links">
+            <a href="mailto:alluri.17@wright.edu">alluri.17@wright.edu</a>
+            <a
+              href="https://www.linkedin.com/in/anuja-alluri-a004b72b7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <!-- FOOTER: Update copyright year or text here -->
-    <footer class="footer">
-        <p>© 2025 Anuja Alluri. Building innovative solutions with code.</p>
+    <footer>
+      <div class="container footer-text">
+        <p>Built with simple HTML and CSS.</p>
+      </div>
     </footer>
-
-    <!-- script.js: Handles typing text and theme toggle. If you rename the file, update this src. -->
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>
